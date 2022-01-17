@@ -8,6 +8,7 @@ export default class DemoInput extends Component {
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
         <Text>Demo Text Input Component</Text>
         <TextInput
+          placeholder="Username"
           style={{
             width: '70%',
             backgroundColor: '#eee',

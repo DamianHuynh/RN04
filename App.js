@@ -4,6 +4,8 @@ import StateFull from './src/Component/Statefull';
 import StateLess from './src/Component/Stateless';
 import DemoImage from './src/Component/DemoImage';
 import DemoInput from './src/Component/DemoTextInput';
+import DemoStyle from './src/Component/DemoStyle';
+import Exam from './src/Component/Exam';
 
 const App = () => {
   return (
@@ -11,7 +13,9 @@ const App = () => {
       {/* <StateFull />
       <StateLess /> */}
       {/* <DemoImage /> */}
-      <DemoInput />
+      {/* <DemoInput /> */}
+      {/* <DemoStyle /> */}
+      <Exam />
     </Fragment>
   );
 };
