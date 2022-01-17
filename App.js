@@ -1,14 +1,22 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {Fragment} from 'react';
+import StateFull from './src/Component/Statefull';
+import StateLess from './src/Component/Stateless';
+import DemoImage from './src/Component/DemoImage';
+import DemoInput from './src/Component/DemoTextInput';
+import DemoStyle from './src/Component/DemoStyle';
+import Exam from './src/Component/Exam';
 
 const App = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text style={{fontSize: 24, fontWeight: '700'}}>
-        Hello React Native Application
-      </Text>
-    </View>
+    <Fragment>
+      {/* <StateFull />
+      <StateLess /> */}
+      {/* <DemoImage /> */}
+      {/* <DemoInput /> */}
+      {/* <DemoStyle /> */}
+      <Exam />
+    </Fragment>
   );
 };
 
