@@ -6,6 +6,8 @@ import DemoImage from './src/Component/DemoImage';
 import DemoInput from './src/Component/DemoTextInput';
 import DemoStyle from './src/Component/DemoStyle';
 import Exam from './src/Component/Exam';
+import BindingData from './src/HandlerComponent/BindingData';
+import ExamBinding from './src/HandlerComponent/Exam';
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
       {/* <DemoImage /> */}
       {/* <DemoInput /> */}
       {/* <DemoStyle /> */}
-      <Exam />
+      {/* <Exam /> */}
+      {/* <BindingData /> */}
+      <ExamBinding />
     </Fragment>
   );
 };
