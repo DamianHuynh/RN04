@@ -8,6 +8,11 @@ import DemoStyle from './src/Component/DemoStyle';
 import Exam from './src/Component/Exam';
 import BindingData from './src/HandlerComponent/BindingData';
 import ExamBinding from './src/HandlerComponent/Exam';
+import RenderWithMap from './src/HandlerComponent/RenderWithMap';
+import DemoProps from './src/Props/DemoProps';
+import DemoScrollView from './src/Props/DemoScrollView';
+import DemoFlatList from './src/Props/DemoFlatList';
+import DemoSectionList from './src/Props/DemoSection';
 
 const App = () => {
   return (
@@ -19,7 +24,11 @@ const App = () => {
       {/* <DemoStyle /> */}
       {/* <Exam /> */}
       {/* <BindingData /> */}
-      <ExamBinding />
+      {/* <RenderWithMap /> */}
+      {/* <DemoProps /> */}
+      {/* <DemoScrollView /> */}
+      {/* <DemoFlatList /> */}
+      <DemoSectionList />
     </Fragment>
   );
 };
