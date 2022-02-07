@@ -15,6 +15,7 @@ import DemoFlatList from './src/Props/DemoFlatList';
 import DemoSectionList from './src/Props/DemoSection';
 import ExamRenderMap from './src/Props/ExamRenderMap';
 import ExamRenderFlatList from './src/Props/ExamRenderFlatlist';
+import GameApp from './src/GameApp';
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
       {/* <DemoFlatList /> */}
       {/* <DemoSectionList /> */}
       {/* <ExamRenderMap /> */}
-      <ExamRenderFlatList />
+      {/* <ExamRenderFlatList /> */}
+      <GameApp />
     </Fragment>
   );
 };
