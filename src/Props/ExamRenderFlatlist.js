@@ -1,12 +1,13 @@
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {Text, View, StyleSheet, FlatList} from 'react-native';
 import React, {Component} from 'react';
 import Alto_icon from '../images/Alto_icon.png';
 import Pillar_icon from '../images/Pillar_icon.png';
 import Genshin_icon from '../images/Genshin_icon.png';
 import Among_icon from '../images/Among_icon.png';
 import CardGameItem from './CardGameItem';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default class ExamRenderMap extends Component {
+export default class ExamRenderFlatList extends Component {
   listGame = [
     {
       id: 0,
@@ -40,22 +41,27 @@ export default class ExamRenderMap extends Component {
     },
   ];
 
-  renderGameItem = () =>
-    this.listGame.map((game, index) => (
-      <CardGameItem
-        key={index}
-        backgroundColor={game.backgroundColor}
-        title={game.title}
-        icon={game.icon}
-        subTitle={game.subTitle}
-      />
-    ));
+  renderGameItem = ({item: game, index}) => (
+    <CardGameItem
+      key={index}
+      backgroundColor={game.backgroundColor}
+      title={game.title}
+      icon={game.icon}
+      subTitle={game.subTitle}
+    />
+    // <View style={{backgroundColor: 'red', height: 100}} />
+  );
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>ExamRenderMap</Text>
-        {this.renderGameItem()}
+        <Text>ExamRenderFlatList</Text>
+        <Icon name="rocket" size={30} color="#900" />
+        <FlatList
+          style={{flexGrow: 0}}
+          data={this.listGame}
+          renderItem={this.renderGameItem}
+        />
       </View>
     );
   }
@@ -65,8 +71,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#343434',
-    justifyContent: 'center',
-    alignItems: 'center',
     paddingHorizontal: 20,
+    paddingVertical: 50,
   },
 });

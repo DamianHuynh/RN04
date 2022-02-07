@@ -13,6 +13,8 @@ import DemoProps from './src/Props/DemoProps';
 import DemoScrollView from './src/Props/DemoScrollView';
 import DemoFlatList from './src/Props/DemoFlatList';
 import DemoSectionList from './src/Props/DemoSection';
+import ExamRenderMap from './src/Props/ExamRenderMap';
+import ExamRenderFlatList from './src/Props/ExamRenderFlatlist';
 
 const App = () => {
   return (
@@ -28,7 +30,9 @@ const App = () => {
       {/* <DemoProps /> */}
       {/* <DemoScrollView /> */}
       {/* <DemoFlatList /> */}
-      <DemoSectionList />
+      {/* <DemoSectionList /> */}
+      {/* <ExamRenderMap /> */}
+      <ExamRenderFlatList />
     </Fragment>
   );
 };
