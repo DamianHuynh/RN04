@@ -1,14 +1,19 @@
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React, {Component} from 'react';
+import LinearGradient from 'react-native-linear-gradient';
 
 export default class Button extends Component {
   render() {
-    const {title, backgroundColor} = this.props;
+    const {title, colors, onPress} = this.props;
     return (
-      <TouchableOpacity>
-        <View style={[styles.buttonContainer, {backgroundColor}]}>
+      <TouchableOpacity onPress={onPress}>
+        <LinearGradient
+          colors={colors}
+          start={{x: 0, y: 0.5}}
+          end={{x: 1, y: 1}}
+          style={[styles.buttonContainer]}>
           <Text style={styles.buttonText}>{title}</Text>
-        </View>
+        </LinearGradient>
       </TouchableOpacity>
     );
   }
