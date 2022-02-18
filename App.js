@@ -16,10 +16,14 @@ import DemoSectionList from './src/Props/DemoSection';
 import ExamRenderMap from './src/Props/ExamRenderMap';
 import ExamRenderFlatList from './src/Props/ExamRenderFlatlist';
 import GameApp from './src/GameApp';
+import GameAppStateManagement from './src/GameAppStateManagement';
+import {Provider} from 'react-redux';
+import rootStore from './src/redux/rootStore';
+import DemoRedux from './src/DemoRedux';
 
 const App = () => {
   return (
-    <Fragment>
+    <Provider store={rootStore}>
       {/* <StateFull />
       <StateLess /> */}
       {/* <DemoImage /> */}
@@ -34,8 +38,10 @@ const App = () => {
       {/* <DemoSectionList /> */}
       {/* <ExamRenderMap /> */}
       {/* <ExamRenderFlatList /> */}
-      <GameApp />
-    </Fragment>
+      {/* <GameApp /> */}
+      <GameAppStateManagement />
+      {/* <DemoRedux /> */}
+    </Provider>
   );
 };
 
