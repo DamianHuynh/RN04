@@ -21,6 +21,7 @@ import {Provider} from 'react-redux';
 import rootStore from './src/redux/rootStore';
 import DemoRedux from './src/DemoRedux';
 import Lifecycle from './src/Lifecycle';
+import DemoCallAPI from './src/DemoCallAPI';
 
 const App = () => {
   return (
@@ -41,8 +42,9 @@ const App = () => {
       {/* <ExamRenderFlatList /> */}
       {/* <GameApp /> */}
       {/* <GameAppStateManagement /> */}
-      <Lifecycle />
+      {/* <Lifecycle /> */}
       {/* <DemoRedux /> */}
+      <DemoCallAPI />
     </Provider>
   );
 };
