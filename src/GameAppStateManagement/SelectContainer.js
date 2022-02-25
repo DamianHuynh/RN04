@@ -2,6 +2,7 @@ import {StyleSheet, View} from 'react-native';
 import React, {Component} from 'react';
 import PlayerSelect from './components/PlayerSelect';
 import {connect} from 'react-redux';
+import {selectOptionRockPaperScissor} from '../redux/actions/gameAction';
 
 class SelectContainer extends Component {
   renderSelectOption = () => {
@@ -9,9 +10,7 @@ class SelectContainer extends Component {
       <PlayerSelect
         key={item.type}
         selectOption={item}
-        onPress={() =>
-          this.props.dispatch({type: 'PLAYER_SELECT', payload: item})
-        }
+        onPress={() => this.props.dispatch(selectOptionRockPaperScissor(item))}
         selectedOption={this.props.selectedOption}
       />
     ));

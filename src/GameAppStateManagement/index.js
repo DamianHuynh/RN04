@@ -14,55 +14,6 @@ import InfoContainer from './InfoContainer';
 import PlayerViewItemContainer from './PlayerViewItemContainer';
 
 export default class GameAppStateManagement extends Component {
-  //#region
-
-  // onPressSelect = selectedOption => {
-  //   this.setState({playerSelected: selectedOption});
-  // };
-
-  // onPressPlayButton = () => {
-  //   if (this.state.times > 0) {
-  //     const randomBotSelect = setInterval(() => {
-  //       const botSelected =
-  //         selectedOptionConstant[Math.floor(Math.random() * 3)];
-  //       this.setState({botSelected});
-  //     }, 100);
-  //     setTimeout(() => {
-  //       clearInterval(randomBotSelect);
-  //       const {times, score} = this.checkResult();
-  //       this.setState({times, score});
-  //     }, 2000);
-  //   } else {
-  //     Alert.alert(
-  //       'Thông Báo',
-  //       'Bạn đã hết lượt chơi vui lòng ấn "Reset" để chơi lại',
-  //     );
-  //   }
-  // };
-
-  // checkResult = () => {
-  //   const {
-  //     playerSelected: {type: playerSelectedType},
-  //     botSelected: {type: botSelectedType},
-  //     times,
-  //     score,
-  //   } = this.state;
-  //   if (playerSelectedType === botSelectedType) {
-  //     return {times: times - 1, score};
-  //   } else if (
-  //     (playerSelectedType === 'rock' && botSelectedType === 'scissor') ||
-  //     (playerSelectedType === 'scissor' && botSelectedType === 'paper') ||
-  //     (playerSelectedType === 'paper' && botSelectedType === 'rock')
-  //   ) {
-  //     return {times: times + 1, score: score + 1};
-  //   } else {
-  //     return {times: times - 1, score: score - 1};
-  //   }
-  // };
-
-  // onPressResetButton = () => this.setState({times: 9, score: 0});
-  //#endregion
-
   render() {
     return (
       <ImageBackground source={Background} style={styles.background}>
@@ -72,10 +23,7 @@ export default class GameAppStateManagement extends Component {
           <PlayerViewItemContainer />
           <SelectContainer />
           <InfoContainer />
-          <ButtonContainer
-          // onPressPlayButton={this.onPressPlayButton}
-          // onPressResetButton={this.onPressResetButton}
-          />
+          <ButtonContainer />
         </SafeAreaView>
       </ImageBackground>
     );
