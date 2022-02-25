@@ -16,12 +16,12 @@ export default class Child extends Component {
   //   console.log('componentDidUpdate Child');
   // }
 
-  componentDidMount() {
-    console.log('componentDidMount');
-    this.checkNetWork = setInterval(() => {
-      console.log('check network');
-    }, 100);
-  }
+  // componentDidMount() {
+  //   console.log('componentDidMount');
+  //   this.checkNetWork = setInterval(() => {
+  //     console.log('check network');
+  //   }, 100);
+  // }
 
   componentWillUnmount() {
     console.log('componentWillUnmount');
