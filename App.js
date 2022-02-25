@@ -20,6 +20,7 @@ import GameAppStateManagement from './src/GameAppStateManagement';
 import {Provider} from 'react-redux';
 import rootStore from './src/redux/rootStore';
 import DemoRedux from './src/DemoRedux';
+import Lifecycle from './src/Lifecycle';
 
 const App = () => {
   return (
@@ -39,7 +40,8 @@ const App = () => {
       {/* <ExamRenderMap /> */}
       {/* <ExamRenderFlatList /> */}
       {/* <GameApp /> */}
-      <GameAppStateManagement />
+      {/* <GameAppStateManagement /> */}
+      <Lifecycle />
       {/* <DemoRedux /> */}
     </Provider>
   );
