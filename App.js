@@ -22,6 +22,7 @@ import rootStore from './src/redux/rootStore';
 import DemoRedux from './src/DemoRedux';
 import Lifecycle from './src/Lifecycle';
 import DemoCallAPI from './src/DemoCallAPI';
+import LoginScreen from './src/LoginUI';
 
 const App = () => {
   return (
@@ -44,7 +45,8 @@ const App = () => {
       {/* <GameAppStateManagement /> */}
       {/* <Lifecycle /> */}
       {/* <DemoRedux /> */}
-      <DemoCallAPI />
+      {/* <DemoCallAPI /> */}
+      <LoginScreen />
     </Provider>
   );
 };
