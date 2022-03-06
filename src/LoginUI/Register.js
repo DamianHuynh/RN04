@@ -13,14 +13,13 @@ import axios from 'axios';
 
 export default class LoginUI extends Component {
   state = {
-    email: '',
-    password: '',
-    name: '',
-    phone: '',
+    value: {email: '', password: '', name: '', phone: ''},
+    error: {email: '', password: '', name: '', phone: ''},
   };
 
-  onChangeText = (value, key) => this.setState({[key]: value});
-
+  onChangeText = (key, value) => {
+    this.setState({[key]: value});
+  };
   validateData = () => {
     const {email, password, name, phone} = this.state;
 
