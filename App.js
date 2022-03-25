@@ -25,6 +25,7 @@ import Lifecycle from './src/Lifecycle';
 import DemoCallAPI from './src/DemoCallAPI';
 import LoginScreen from './src/LoginUI';
 import RootApp from './src/Navigation';
+import DemoHook from './src/Hook/DemoHook';
 
 const App = () => {
   return (
@@ -50,7 +51,8 @@ const App = () => {
         {/* <DemoRedux /> */}
         {/* <DemoCallAPI /> */}
         {/* <LoginScreen /> */}
-        <RootApp />
+        {/* <RootApp /> */}
+        <DemoHook />
       </NavigationContainer>
     </Provider>
   );
